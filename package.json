@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ipinfo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "IPInfo MCP — wraps ipinfo.io (free tier, no auth required for basic usage)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-1015699730a779fa20bb698aa8edc2836eb0b00652193ca464e45bc284172b9d",
-    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
+    "sourceHash": "v1-3168d71d2049945ac0ce9b7707e199b31e4f16e868080ac03b5a860fc2d02267",
+    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
   }
 }
