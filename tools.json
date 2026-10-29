@@ -1,0 +1,26 @@
+[
+  {
+    "name": "lookup_ip",
+    "description": "Get geolocation and network info for any IP address (e.g., \"8.8.8.8\"). Returns city, region, country, coordinates, org, postal code, timezone.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ip": {
+          "type": "string",
+          "description": "IPv4 or IPv6 address to look up (e.g., \"8.8.8.8\")"
+        }
+      },
+      "required": [
+        "ip"
+      ]
+    }
+  },
+  {
+    "name": "get_my_ip",
+    "description": "Get your current IP address with geolocation data. Returns city, region, country, coordinates, org, postal code, timezone.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]

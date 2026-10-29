@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-ipinfo",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "IPInfo MCP — wraps ipinfo.io (free tier, no auth required for basic usage)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-ipinfo": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ipinfo"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-ipinfo.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/ipinfo",
   "pipeworx": {
-    "sourceHash": "v1-3168d71d2049945ac0ce9b7707e199b31e4f16e868080ac03b5a860fc2d02267",
-    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
+    "mode": "gateway",
+    "slug": "ipinfo",
+    "gatewaySlug": "ipinfo",
+    "sourceHash": "v1-ac8cb62a9b8a3ed20793aa8d738f7f681622d7afb714b18653ed892e7a4a7332",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
